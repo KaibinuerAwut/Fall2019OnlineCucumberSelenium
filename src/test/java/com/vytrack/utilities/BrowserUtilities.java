@@ -124,6 +124,8 @@ public class BrowserUtilities {
             Driver.getDriver().switchTo().window(window);
             if(Driver.getDriver().getTitle().equals(title)){
                 break;
+
+
             }
         }
     }

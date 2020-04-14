@@ -119,6 +119,4 @@ public class CalendarEventPage extends AbstractPageBase {
 
     }
 
-
-
 }
