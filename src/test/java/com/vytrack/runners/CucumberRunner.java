@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
             glue = "com/vytrack/step_definitions",
             features = "src/test/resources/features",
             dryRun = false,
-            strict = true,
-            tags = "@driver"
+            strict = false,
+            tags = "@sales_manager or @driver"
     )
 
     public class CucumberRunner {
