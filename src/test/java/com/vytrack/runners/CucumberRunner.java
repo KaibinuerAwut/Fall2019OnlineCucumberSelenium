@@ -11,14 +11,14 @@ import org.junit.runner.RunWith;
             features = "src/test/resources/features",
             dryRun = false,
             strict = false,
-            tags = " ",
-            plugin = "html:target/cucumber-html-report"
-
+            tags = "@create_car",
+            plugin = {
+                    "html:target/default-report",
+                    "json:target/cucumber1.json"
+            }
     )
 
     public class CucumberRunner {
 
 
     }
-
-

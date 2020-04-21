@@ -1,14 +1,14 @@
 package com.vytrack.step_definitions;
 
-import com.vytrack.pages.activities.CalendarEventPage;
+import com.vytrack.pages.activities.CalendarEventsPage;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 import java.util.Map;
 
-public class createCalendarEventStepDefinitions {
+public class CreateCalendarEventStepDefinitions {
 
-    CalendarEventPage calendarEventsPage = new CalendarEventPage();
+    CalendarEventsPage calendarEventsPage = new CalendarEventsPage();
 
     @Then("user clicks on create calendar event button")
     public void user_clicks_on_create_calendar_event_button() {

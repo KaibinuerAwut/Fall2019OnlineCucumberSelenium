@@ -1,5 +1,6 @@
+@activities
 Feature: Create calendar event
-  As a user, I want to be able to create calendar events.
+  As user, I want to be able to create calendar events.
 
   Scenario: Create calendar event as sales manager
     Given user is on the login page
@@ -26,4 +27,3 @@ Feature: Create calendar event
     And user verifies new calendar event was created successfully
       | description | On this meeting we discuss what went well, what went wrong and what can be improved |
       | title       | Sprint Retrospective                                                                |
-

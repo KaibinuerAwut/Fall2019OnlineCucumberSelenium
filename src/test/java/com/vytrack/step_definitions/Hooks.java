@@ -4,28 +4,25 @@ import com.vytrack.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.cucumber.junit.CucumberOptions;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
-    @Before
+    @Before(order = 2)
     public void setup() {
         System.out.println("Test setup");
         Driver.getDriver().manage().window().maximize();
     }
 
-    @Before("@driver")
+    @Before(value = "@driver", order = 1)
     public void specialSetup() {
         System.out.println("Setup for driver only");
-
     }
 
     @After("@driver")
     public void specialTearDown() {
         System.out.println("Tear down for driver only");
-
     }
 
     @After
